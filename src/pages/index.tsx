@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { css } from '@emotion/react'
-import BaseButton from '../components/commons/BaseButton'
+import BaseButton from '@/components/commons/BaseButton'
 
 const sampleCss = css({
   color: 'red',
