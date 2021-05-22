@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { css } from '@emotion/react'
+import BaseButton from '../components/commons/BaseButton'
 
 const sampleCss = css({
   color: 'red',
@@ -22,13 +23,13 @@ export const Home = (): JSX.Element => (
         Get started by editing <code>pages/index.tsx</code>
       </p>
 
-      <button
+      <BaseButton
         onClick={() => {
           window.alert('With typescript and Jest')
         }}
       >
         Test Button
-      </button>
+      </BaseButton>
 
       <div className="grid">
         <a href="https://nextjs.org/docs" className="card">
