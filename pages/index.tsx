@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { css } from '@emotion/react'
+
+const sampleCss = css({
+  color: 'red',
+})
 
 export const Home = (): JSX.Element => (
   <div className="container">
@@ -28,7 +33,9 @@ export const Home = (): JSX.Element => (
       <div className="grid">
         <a href="https://nextjs.org/docs" className="card">
           <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p css={sampleCss}>
+            Find in-depth information about Next.js features and API.
+          </p>
         </a>
 
         <a href="https://nextjs.org/learn" className="card">
